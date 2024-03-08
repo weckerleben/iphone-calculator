@@ -1,0 +1,66 @@
+.calculator {
+    background-color: #000;
+    color: white;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .display {
+    background-color: #222;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    margin: 5px;
+    border-radius: 50%; /* This will ensure that the buttons are round */
+    width: 80px; /* Base width for all buttons */
+    height: 80px; /* Base height for all buttons, same as width for a perfect circle */
+    cursor: pointer;
+    outline: none; /* Remove the focus outline */
+  }
+  
+  /* Specific styling for the zero button to make it twice as wide */
+  button.zero {
+    flex: 0 0 180px; /* Twice the base width minus the margin to maintain the round shape */
+    width: 1px; /* Twice the base width */
+    border-radius: 30px;
+  }
+  
+  button:active {
+    background-color: #555; /* Provides feedback on click */
+  }
+  
+  /* Orange buttons for operators */
+  button.operator {
+    background-color: #fa8231;
+    color: white;
+  }
+  
+  /* Clear button */
+  button.clear {
+    background-color: #f0f0f0;
+    color: #444;
+  }
+  
+  /* Equals button */
+  button.equals {
+    background-color: #04be02;
+    color: white;
+  }
+  
